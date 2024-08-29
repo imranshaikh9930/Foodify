@@ -6,7 +6,7 @@ import axios from "axios";
 export const StoreContext = createContext();
 
 const StoreContextProvider = ({children})=>{
-    const url = "http://localhost:4000";
+    const url = "https://foodify-backend-u86r.onrender.com";
     const [food_lists,setFoodLists] = useState([]);
     const [token, setToken] = useState("")
     const [cartItems,setCartItems] = useState({});
